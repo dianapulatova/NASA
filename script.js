@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Error fetching photo:", error));
 
     // Fetch NASA updates
-    fetch("https://api.nasa.gov/updates/aggregate/NEWS_TRENDING?api_key=DEMO_KEY")
+    fetch("https://api.nasa.gov/updates/aggregate/NEWS_TRENDING?api_key=DTNE8yo702F869a2yc79t5QCsbVh6ShrzSoVXqQx")
         .then(response => response.json())
         .then(data => {
             const updateList = document.getElementById("update-list");
