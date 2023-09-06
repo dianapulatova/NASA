@@ -1,4 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
+// config.js
+module.exports = {
+    NASA_API_KEY: 'DTNE8yo702F869a2yc79t5QCsbVh6ShrzSoVXqQx',
+  };
+  const config = require('./config.js');
+  const apiKey = config.NASA_API_KEY;
+  
+  document.addEventListener("DOMContentLoaded", function () {
     // Fetch NASA's Astronomy Picture of the Day
     fetch("https://api.nasa.gov/planetary/apod?api_key=DTNE8yo702F869a2yc79t5QCsbVh6ShrzSoVXqQx")
         .then(response => response.json())
